@@ -22,7 +22,7 @@ jobs:
 
             git pull
             npm i
-            node server.js
+
 
             # Stop the agent after use
             #ssh-agent -k
