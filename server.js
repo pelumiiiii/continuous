@@ -19,7 +19,7 @@ connection.connect(err => {
 
 const server = http.createServer((req, res) => {
     if (req.method === 'GET') {
-        res.end('This is for updating data');
+        res.end('Yaml Configuration Successful');
     }
 });
 

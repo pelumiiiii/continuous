@@ -21,7 +21,8 @@ jobs:
             cd /home/ubuntu/continuous
 
             git pull
-            #npm install
+            npm i
+            node server.js
 
             # Stop the agent after use
             #ssh-agent -k
