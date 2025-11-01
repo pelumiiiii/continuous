@@ -26,3 +26,22 @@ const server = http.createServer((req, res) => {
 server.listen(2170, "0.0.0.0", () => {
     console.log("Server is listening on port 2170");
 });
+
+
+/*
+
+SHA256:wTzNatGw/dLhifr+ZJwTKvT6eQp3W4GfUrNdtOImlRA ubuntu@ip-172-31-88-99
+The key's randomart image is:
++--[ED25519 256]--+
+|        .  E     |
+|       o B  .    |
+|        B =..   .|
+|         = =.+...|
+|        S o B++..|
+|       o o +o=.*.|
+|        + +.Oo= .|
+|         * =+=   |
+|        .o*+o    |
++----[SHA256]-----+
+
+*/

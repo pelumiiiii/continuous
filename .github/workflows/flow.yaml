@@ -1,0 +1,26 @@
+name: flow
+
+on:
+  push:
+    branches:
+      - main
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Deploy via SSH
+        uses: appleboy/ssh-action@v1.0.3
+        with:
+          # These must be stored as GitHub Secrets (see Step 3)
+          host: ${{ secrets.PUBLIC_IP }}
+          username: ubuntu
+          key: ${{ secrets.SSH_KEY }}
+          script: |
+
+
+            git pull
+            #npm install
+
+            # Stop the agent after use
+            #ssh-agent -k
