@@ -19,12 +19,10 @@ connection.connect(err => {
 
 const server = http.createServer((req, res) => {
     if (req.method === 'GET') {
-        res.end('Success');
+        res.end('This is for updating data');
     }
 });
 
 server.listen(2170, "0.0.0.0", () => {
     console.log("Server is listening on port 2170");
 });
-
-// /Users/adekunlemichael/documents/code/dummyProject.  /home/ubuntu.  
